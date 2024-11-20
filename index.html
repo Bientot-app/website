@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="en"><head>
+	    <!-- Event snippet for Υποβολή φόρμας δυνητικού πελάτη conversion page
+	In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+	<script>
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'AW-16784995026/69E4CKSOw-wZENLl2sM-',
+	      'value': 1.0,
+	      'currency': 'EUR',
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	</script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16784995026"></script>
     <script>
