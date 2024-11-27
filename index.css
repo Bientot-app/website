@@ -829,6 +829,10 @@
     width: 340px;
     margin-bottom: -270px;
   }
+
+  .u-section-5 .u-btn-1 {
+    width: 29%;
+  }
 } .u-section-6 {
   background-image: url("images/fgds-min.jpg");
   background-position: 50% 50%;
